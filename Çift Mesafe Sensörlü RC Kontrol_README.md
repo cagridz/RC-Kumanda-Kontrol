@@ -13,3 +13,5 @@ Robotun önüne ve arkasına yerleştirilen HC - SR04 sensörü, hareket edilen 
 
 
 Mesafe sensörleri 20 cm de durmaktadır. 
+Ayarlanabilir DC-DC Voltaj Düşürücü olarak 1 Adet LM2596 ve 1 Adet XL4015 kullanılmıştır. Batarya olarak lityum 3S 18650 batarya, 3S 40A BMS kullanılmıştır. 
+L298N Motor sürücü XL4015 ile beslenmiş, 2 Adet HC SR04, Arduino Mega, FS-IA6B 6 kanallı RC Kumanda alıcısı ise diğer voltaj düşürücü olan LM2596 ile beslenmiştir. LM2596 ya bağlı olan modüllerin tamamında ortak GND bağlantısı yapılmıştır. 
