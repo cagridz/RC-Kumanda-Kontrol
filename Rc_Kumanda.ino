@@ -22,7 +22,7 @@
 #define ECHO_PIN 23
 #define TRIG_PIN_2 24
 #define ECHO_PIN_2 25
-#define OBSTACLE_THRESHOLD 10
+#define OBSTACLE_THRESHOLD 20
 
 #define IBUS_RX_PIN 19
 
@@ -116,14 +116,20 @@ void readFlySkyReceiver() {
 
 void controlMotors() {
   int distance1 = measureDistance(TRIG_PIN, ECHO_PIN);
-  delay(50); // yankı karışmasını önlemek için gecikme
+  delay(50);
   int distance2 = measureDistance(TRIG_PIN_2, ECHO_PIN_2);
 
-  if ((distance1 > 0 && distance1 < OBSTACLE_THRESHOLD && throttle > 50) ||
-      (distance2 > 0 && distance2 < OBSTACLE_THRESHOLD && throttle > 50)) {
+  if (distance1 > 0 && distance1 < OBSTACLE_THRESHOLD && throttle > 50) {
     motor1.stop();
     motor2.stop();
-    Serial.println("ENGEL ALGILANDI! Duruyorum...");
+    Serial.println("Önde ENGEL ALGILANDI! Duruyorum...");
+    return;
+  }
+
+  if (distance2 > 0 && distance2 < OBSTACLE_THRESHOLD && throttle < -50) {
+    motor1.stop();
+    motor2.stop();
+    Serial.println("Arkada ENGEL ALGILANDI! Duruyorum...");
     return;
   }
 
