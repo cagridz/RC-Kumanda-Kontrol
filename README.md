@@ -10,3 +10,6 @@ Robotun önüne ve arkasına yerleştirilen HC - SR04 sensörü, hareket edilen 
 
 
 ![WhatsApp Image 2025-03-24 at 00 35 06](https://github.com/user-attachments/assets/83aece89-1041-456e-9448-e43fec12633e)
+
+
+Mesafe sensörleri 20 cm de durmaktadır. 
