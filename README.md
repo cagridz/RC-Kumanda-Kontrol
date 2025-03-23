@@ -4,3 +4,4 @@ Daha sonra eklenecek olan Lidar, Lora, Ultrasonik sensör, GPS modülü de koda 
 Devre 3S 18650 Lityum batarya ile beslenmektedir. Pil kontrolü için BMS kullanılmıştır. Bataryaya 2 adet DC-DC voltaj düşürücü bağlıdır. Biri doğrudan motoru beslemektedir. Motor için 6V 250 Rpm tip kullanılmış olup, motor sürücü için L298N çift motor sürücü kullanılmıştır ve ayrı beslenmektedir. Motor gerilimine bağlı olarak besleme gerilimi 6V ile sınırlandırılmıştır. Diğer DC-DC voltaj düşürücü ise Arduino Mega ve Alıcıyı beslemektedir. 
 
 ![Adsız](https://github.com/user-attachments/assets/c04d3a5e-754d-4b1a-904a-37d8105bb675)
+![Screenshot_1](https://github.com/user-attachments/assets/ab710cb9-ee58-45f9-a192-7d6120e6972c)
