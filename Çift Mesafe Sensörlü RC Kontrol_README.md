@@ -18,3 +18,5 @@ L298N Motor sürücü XL4015 ile beslenmiş, 2 Adet HC SR04, Arduino Mega, FS-IA
 
 
 2 tekerlekli, 1 sarhoş tekerlekli robot şasesi için 2WD Chassis tasarımı kullanılmıştır. 2 adet 3D baskı plaka, 4 adet 3D baskı kolon ile ve 4 mm sunta civatası ile birleştirilmiştir. 
+
+Aynı zamanda ani fren amacı ile sol+geri tuşu ile frenleme tuş kombinasyonu yer almaktadır. 
